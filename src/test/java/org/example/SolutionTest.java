@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.util.ListNode;
+import org.example.util.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,5 +35,13 @@ public class SolutionTest {
     public void solution06Test() {
         ListNode head = ListNode.fromArray(new int[]{1, 3, 2});
         assertArrayEquals(new Solution06().reversePrint(head), new int[]{2, 3, 1});
+    }
+
+    @Test
+    public void solution07Test() {
+        TreeNode treeNode = new Solution07().buildTree(
+                new int[]{3, 9, 20, 15, 7},
+                new int[]{9, 3, 15, 20, 7}
+        );
     }
 }
