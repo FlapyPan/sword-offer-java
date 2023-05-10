@@ -1,8 +1,6 @@
 package org.example;
 
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 
 /**
@@ -32,11 +30,5 @@ public class Solution03 {
             if (nums[i] == nums[i + 1]) return nums[i];
         }
         return -1;
-    }
-
-    @Test
-    public void test() {
-        int result = findRepeatNumber(new int[]{2, 3, 1, 0, 2, 5, 3});
-        assert result == 2 || result == 3;
     }
 }

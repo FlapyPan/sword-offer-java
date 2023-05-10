@@ -1,7 +1,5 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
  * <p>
@@ -26,10 +24,5 @@ public class Solution05 {
             else builder.append(c);
         }
         return builder.toString();
-    }
-
-    @Test
-    public void test() {
-        assert "We%20are%20happy.".equals(replaceSpace("We are happy."));
     }
 }

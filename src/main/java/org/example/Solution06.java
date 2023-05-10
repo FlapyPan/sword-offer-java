@@ -1,9 +1,6 @@
 package org.example;
 
 import org.example.util.ListNode;
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 /**
  * 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
@@ -39,9 +36,4 @@ public class Solution06 {
         i += 1;
     }
 
-    @Test
-    public void test() {
-        ListNode head = ListNode.fromArray(new int[]{1, 3, 2});
-        assert Arrays.equals(reversePrint(head), new int[]{2, 3, 1});
-    }
 }
