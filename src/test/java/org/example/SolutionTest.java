@@ -44,4 +44,19 @@ public class SolutionTest {
                 new int[]{9, 3, 15, 20, 7}
         );
     }
+
+    @Test
+    public void solution09Test() {
+        var queue1 = new Solution09.CQueue();
+        queue1.appendTail(3);
+        assertEquals(queue1.deleteHead(), 3);
+        assertEquals(queue1.deleteHead(), -1);
+        assertEquals(queue1.deleteHead(), -1);
+        var queue2 = new Solution09.CQueue();
+        assertEquals(queue2.deleteHead(), -1);
+        queue2.appendTail(5);
+        queue2.appendTail(2);
+        assertEquals(queue2.deleteHead(), 5);
+        assertEquals(queue2.deleteHead(), 2);
+    }
 }
