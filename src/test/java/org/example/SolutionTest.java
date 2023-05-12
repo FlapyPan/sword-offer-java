@@ -59,4 +59,11 @@ public class SolutionTest {
         assertEquals(queue2.deleteHead(), 5);
         assertEquals(queue2.deleteHead(), 2);
     }
+
+    @Test
+    public void solution10_1Test() {
+        var solution10_1 = new Solution10_1();
+        assertEquals(solution10_1.fib(2), 1);
+        assertEquals(solution10_1.fib(5), 5);
+    }
 }
