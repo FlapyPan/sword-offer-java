@@ -66,4 +66,12 @@ public class SolutionTest {
         assertEquals(solution10_1.fib(2), 1);
         assertEquals(solution10_1.fib(5), 5);
     }
+
+    @Test
+    public void solution10_2Test() {
+        var solution10_2 = new Solution10_2();
+        assertEquals(solution10_2.numWays(2), 2);
+        assertEquals(solution10_2.numWays(7), 21);
+        assertEquals(solution10_2.numWays(0), 1);
+    }
 }
