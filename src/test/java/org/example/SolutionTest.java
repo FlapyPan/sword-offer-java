@@ -74,4 +74,11 @@ public class SolutionTest {
         assertEquals(solution10_2.numWays(7), 21);
         assertEquals(solution10_2.numWays(0), 1);
     }
+
+    @Test
+    public void solution11Test() {
+        var solution11 = new Solution11();
+        assertEquals(solution11.minArray(new int[]{3, 4, 5, 1, 2}), 1);
+        assertEquals(solution11.minArray(new int[]{2, 2, 2, 0, 1}), 0);
+    }
 }
