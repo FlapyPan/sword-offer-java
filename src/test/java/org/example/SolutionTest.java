@@ -81,4 +81,18 @@ public class SolutionTest {
         assertEquals(solution11.minArray(new int[]{3, 4, 5, 1, 2}), 1);
         assertEquals(solution11.minArray(new int[]{2, 2, 2, 0, 1}), 0);
     }
+
+    @Test
+    public void solution12Test() {
+        var solution12 = new Solution12();
+        assertTrue(solution12.exist(new char[][]{
+                new char[]{'A', 'B', 'C', 'E'},
+                new char[]{'S', 'F', 'C', 'S'},
+                new char[]{'A', 'D', 'E', 'E'}
+        }, "ABCCED"));
+        assertFalse(solution12.exist(new char[][]{
+                new char[]{'a', 'b'},
+                new char[]{'c', 'd'},
+        }, "abcd"));
+    }
 }
