@@ -102,4 +102,11 @@ public class SolutionTest {
         assertEquals(solution13.movingCount(2, 3, 1), 3);
         assertEquals(solution13.movingCount(3, 1, 0), 1);
     }
+
+    @Test
+    public void solution14_1Test() {
+        var solution14_1 = new Solution14_1();
+        assertEquals(solution14_1.cuttingRope(2), 1);
+        assertEquals(solution14_1.cuttingRope(10), 36);
+    }
 }
