@@ -95,4 +95,11 @@ public class SolutionTest {
                 new char[]{'c', 'd'},
         }, "abcd"));
     }
+
+    @Test
+    public void solution13Test() {
+        var solution13 = new Solution13();
+        assertEquals(solution13.movingCount(2, 3, 1), 3);
+        assertEquals(solution13.movingCount(3, 1, 0), 1);
+    }
 }
