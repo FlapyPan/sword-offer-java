@@ -109,4 +109,11 @@ public class SolutionTest {
         assertEquals(solution14_1.cuttingRope(2), 1);
         assertEquals(solution14_1.cuttingRope(10), 36);
     }
+
+    @Test
+    public void solution14_2Test() {
+        var solution14_2 = new Solution14_2();
+        assertEquals(solution14_2.cuttingRope(2), 1);
+        assertEquals(solution14_2.cuttingRope(10), 36);
+    }
 }
