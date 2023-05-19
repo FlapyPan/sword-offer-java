@@ -116,4 +116,12 @@ public class SolutionTest {
         assertEquals(solution14_2.cuttingRope(2), 1);
         assertEquals(solution14_2.cuttingRope(10), 36);
     }
+
+    @Test
+    public void solution15Test() {
+        var solution15 = new Solution15();
+        assertEquals(solution15.hammingWeight(11), 3);
+        assertEquals(solution15.hammingWeight(128), 1);
+        assertEquals(solution15.hammingWeight(-3), 31);
+    }
 }
