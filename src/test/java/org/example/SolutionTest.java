@@ -124,4 +124,13 @@ public class SolutionTest {
         assertEquals(solution15.hammingWeight(128), 1);
         assertEquals(solution15.hammingWeight(-3), 31);
     }
+
+    @Test
+    public void solution16Test() {
+        var solution16 = new Solution16();
+        assertEquals(solution16.myPow(2.00000, 10), 1024.00000);
+        // 精度问题
+        // assertEquals(solution16.myPow(2.10000, 3), 9.26100);
+        assertEquals(solution16.myPow(2.00000, -2), 0.25000);
+    }
 }
