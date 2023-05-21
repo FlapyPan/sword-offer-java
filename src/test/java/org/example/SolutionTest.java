@@ -4,6 +4,8 @@ import org.example.util.ListNode;
 import org.example.util.TreeNode;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SolutionTest {
@@ -132,5 +134,11 @@ public class SolutionTest {
         // 精度问题
         // assertEquals(solution16.myPow(2.10000, 3), 9.26100);
         assertEquals(solution16.myPow(2.00000, -2), 0.25000);
+    }
+
+    @Test
+    public void solution17Test() {
+        var solution17 = new Solution17();
+        System.out.println(Arrays.toString(solution17.printNumbers(1)));
     }
 }
