@@ -141,4 +141,15 @@ public class SolutionTest {
         var solution17 = new Solution17();
         System.out.println(Arrays.toString(solution17.printNumbers(1)));
     }
+
+    @Test
+    public void solution18Test() {
+        var solution18 = new Solution18();
+        ListNode head1 = ListNode.fromArray(new int[]{4, 5, 1, 9});
+        head1 = solution18.deleteNode(head1, 5);
+        assertArrayEquals(head1.toArray(), new int[]{4, 1, 9});
+        ListNode head2 = ListNode.fromArray(new int[]{4, 5, 1, 9});
+        head2 = solution18.deleteNode(head2, 1);
+        assertArrayEquals(head2.toArray(), new int[]{4, 5, 9});
+    }
 }
