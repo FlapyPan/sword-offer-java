@@ -152,4 +152,15 @@ public class SolutionTest {
         head2 = solution18.deleteNode(head2, 1);
         assertArrayEquals(head2.toArray(), new int[]{4, 5, 9});
     }
+
+    @Test
+    public void solution19Test() {
+        var solution19 = new Solution19();
+        assertFalse(solution19.isMatch("aa", "a"));
+        assertTrue(solution19.isMatch("aa", "a*"));
+        assertTrue(solution19.isMatch("ab", ".*"));
+        assertTrue(solution19.isMatch("aab", "c*a*b"));
+        assertFalse(solution19.isMatch("mississippi", "mis*is*p*."));
+    }
+
 }
