@@ -163,4 +163,22 @@ public class SolutionTest {
         assertFalse(solution19.isMatch("mississippi", "mis*is*p*."));
     }
 
+    @Test
+    public void solution20Test() {
+        var solution20 = new Solution20();
+        assertTrue(solution20.isNumber("0"));
+        assertFalse(solution20.isNumber("e"));
+        assertFalse(solution20.isNumber("."));
+        assertTrue(solution20.isNumber("    .1  "));
+        assertTrue(solution20.isNumber("+100"));
+        assertTrue(solution20.isNumber("5e2"));
+        assertTrue(solution20.isNumber("-123"));
+        assertTrue(solution20.isNumber("-1E-16"));
+        assertFalse(solution20.isNumber("1a3.14"));
+        assertFalse(solution20.isNumber("1.2.3"));
+        assertFalse(solution20.isNumber("+-5"));
+        assertFalse(solution20.isNumber("12e+5.4"));
+    }
+
+
 }
