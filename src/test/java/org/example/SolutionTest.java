@@ -5,6 +5,7 @@ import org.example.util.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -180,5 +181,9 @@ public class SolutionTest {
         assertFalse(solution20.isNumber("12e+5.4"));
     }
 
-
+    @Test
+    public void solution21Test() {
+        var solution21 = new Solution21();
+        System.out.println(Arrays.toString(solution21.exchange(new int[]{1, 2, 3, 4})));
+    }
 }
