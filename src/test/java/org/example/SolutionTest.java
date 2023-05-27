@@ -5,7 +5,6 @@ import org.example.util.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -185,5 +184,12 @@ public class SolutionTest {
     public void solution21Test() {
         var solution21 = new Solution21();
         System.out.println(Arrays.toString(solution21.exchange(new int[]{1, 2, 3, 4})));
+    }
+
+    @Test
+    public void solution22Test() {
+        var solution22 = new Solution22();
+        ListNode result = solution22.getKthFromEnd(ListNode.fromArray(new int[]{1, 2, 3, 4, 5}), 2);
+        assertArrayEquals(result.toArray(), new int[]{4, 5});
     }
 }
