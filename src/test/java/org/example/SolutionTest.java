@@ -192,4 +192,11 @@ public class SolutionTest {
         ListNode result = solution22.getKthFromEnd(ListNode.fromArray(new int[]{1, 2, 3, 4, 5}), 2);
         assertArrayEquals(result.toArray(), new int[]{4, 5});
     }
+
+    @Test
+    public void solution24Test() {
+        var solution24 = new Solution24();
+        ListNode reversedList = solution24.reverseList(ListNode.fromArray(new int[]{1, 2, 3, 4, 5}));
+        assertArrayEquals(reversedList.toArray(), new int[]{5, 4, 3, 2, 1});
+    }
 }
