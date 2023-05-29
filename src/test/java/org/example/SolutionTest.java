@@ -199,4 +199,14 @@ public class SolutionTest {
         ListNode reversedList = solution24.reverseList(ListNode.fromArray(new int[]{1, 2, 3, 4, 5}));
         assertArrayEquals(reversedList.toArray(), new int[]{5, 4, 3, 2, 1});
     }
+
+    @Test
+    public void solution25Test() {
+        var solution25 = new Solution25();
+        ListNode node = solution25.mergeTwoLists(
+                ListNode.fromArray(new int[]{1, 2, 4}),
+                ListNode.fromArray(new int[]{1, 3, 4})
+        );
+        assertArrayEquals(node.toArray(), new int[]{1, 1, 2, 3, 4, 4});
+    }
 }
