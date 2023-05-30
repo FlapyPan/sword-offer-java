@@ -209,4 +209,13 @@ public class SolutionTest {
         );
         assertArrayEquals(node.toArray(), new int[]{1, 1, 2, 3, 4, 4});
     }
+
+    @Test
+    public void solution26Test() {
+        var solution26 = new Solution26();
+        assertFalse(solution26.isSubStructure(
+                TreeNode.fromPostorder(new int[]{1, 2, 3}),
+                TreeNode.fromPostorder(new int[]{3, 1})
+        ));
+    }
 }
