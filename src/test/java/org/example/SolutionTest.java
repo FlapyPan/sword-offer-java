@@ -214,8 +214,12 @@ public class SolutionTest {
     public void solution26Test() {
         var solution26 = new Solution26();
         assertFalse(solution26.isSubStructure(
-                TreeNode.fromPostorder(new int[]{1, 2, 3}),
-                TreeNode.fromPostorder(new int[]{3, 1})
+                TreeNode.fromBfsArray(new int[]{1, 2, 3}),
+                TreeNode.fromBfsArray(new int[]{3, 1})
+        ));
+        assertTrue(solution26.isSubStructure(
+                TreeNode.fromBfsArray(new int[]{3, 4, 5, 1, 2}),
+                TreeNode.fromBfsArray(new int[]{4, 1})
         ));
     }
 }
