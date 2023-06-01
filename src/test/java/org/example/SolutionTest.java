@@ -222,4 +222,13 @@ public class SolutionTest {
                 TreeNode.fromBfsArray(new int[]{4, 1})
         ));
     }
+
+    @Test
+    public void solution27Test() {
+        var solution27 = new Solution27();
+        int[] result = solution27.mirrorTree(
+                TreeNode.fromBfsArray(new int[]{4, 2, 7, 1, 3, 6, 9})
+        ).toBfsArray();
+        assertArrayEquals(new int[]{4, 7, 2, 9, 6, 3, 1}, result);
+    }
 }
