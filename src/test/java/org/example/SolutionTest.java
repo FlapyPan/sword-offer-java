@@ -231,4 +231,10 @@ public class SolutionTest {
         ).toBfsArray();
         assertArrayEquals(new int[]{4, 7, 2, 9, 6, 3, 1}, result);
     }
+
+    @Test
+    public void solution28Test() {
+        var solution28 = new Solution28();
+        assertTrue(solution28.isSymmetric(TreeNode.fromBfsArray(new int[]{1, 2, 2, 3, 4, 4, 3})));
+    }
 }
