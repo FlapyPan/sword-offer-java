@@ -258,4 +258,16 @@ public class SolutionTest {
                 })
         );
     }
+
+    @Test
+    public void solution30Test() {
+        var stack = new Solution30();
+        stack.push(-2);
+        stack.push(0);
+        stack.push(-3);
+        assertEquals(-3, stack.min());
+        stack.pop();
+        assertEquals(0, stack.top());
+        assertEquals(-2, stack.min());
+    }
 }
