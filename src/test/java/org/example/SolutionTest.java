@@ -270,4 +270,11 @@ public class SolutionTest {
         assertEquals(0, stack.top());
         assertEquals(-2, stack.min());
     }
+
+    @Test
+    public void solution31Test() {
+        var s = new Solution31();
+        assertTrue(s.validateStackSequences(new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1}));
+        assertFalse(s.validateStackSequences(new int[]{1, 2, 3, 4, 5}, new int[]{4, 3, 5, 1, 2}));
+    }
 }
