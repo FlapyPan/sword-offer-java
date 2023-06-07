@@ -10,7 +10,7 @@ import java.util.Queue;
 /**
  * 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。
  */
-public class Solution32 {
+public class Solution32_1 {
     public int[] levelOrder(TreeNode root) {
         // 就是个层序遍历，秒了
         if (root == null) return new int[0];
