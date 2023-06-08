@@ -17,7 +17,7 @@ public class Solution32_2 {
         return node;
     }
 
-    public void level(List<List<Integer>> node, TreeNode root, int i) {
+    private void level(List<List<Integer>> node, TreeNode root, int i) {
         if (root == null) return;
         // 检查 node 中已有的层数
         if (node.size() <= i) node.add(new ArrayList<>());
