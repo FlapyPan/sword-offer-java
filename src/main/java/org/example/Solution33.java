@@ -26,7 +26,7 @@ public class Solution33 {
                     // 出现了比当前小的，记录下来
                     tag = true;
                 }
-                // 如果之前出现过小的值，蛋又出现了比当前结点大的值则为非法
+                // 如果之前出现过小的值，但是又出现了比当前结点大的值则为非法
                 if (tag && current < other) return false;
             }
             tag = false;
