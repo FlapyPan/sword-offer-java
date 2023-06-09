@@ -277,4 +277,11 @@ public class SolutionTest {
         assertTrue(s.validateStackSequences(new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1}));
         assertFalse(s.validateStackSequences(new int[]{1, 2, 3, 4, 5}, new int[]{4, 3, 5, 1, 2}));
     }
+
+    @Test
+    public void solution33Test() {
+        var s = new Solution33();
+        assertFalse(s.verifyPostorder(new int[]{1, 6, 3, 2, 5}));
+        assertTrue(s.verifyPostorder(new int[]{1, 3, 2, 6, 5}));
+    }
 }
