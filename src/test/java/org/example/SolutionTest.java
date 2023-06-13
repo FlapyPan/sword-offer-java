@@ -284,4 +284,13 @@ public class SolutionTest {
         assertFalse(s.verifyPostorder(new int[]{1, 6, 3, 2, 5}));
         assertTrue(s.verifyPostorder(new int[]{1, 3, 2, 6, 5}));
     }
+
+    @Test
+    public void solution37Test() {
+        var s = new Solution37();
+        String target = "1 2 # # 3 4 # # 5 # #";
+        TreeNode node = s.deserialize(target);
+        String serialized = s.serialize(node);
+        assertEquals(serialized, target);
+    }
 }
