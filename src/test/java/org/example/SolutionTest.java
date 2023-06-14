@@ -293,4 +293,11 @@ public class SolutionTest {
         String serialized = s.serialize(node);
         assertEquals(serialized, target);
     }
+
+    @Test
+    public void solution38Test() {
+        var s = new Solution38();
+        System.out.println(Arrays.toString(s.permutation("abc")));
+        System.out.println(Arrays.toString(s.permutation("123456")));
+    }
 }
