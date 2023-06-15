@@ -300,4 +300,10 @@ public class SolutionTest {
         System.out.println(Arrays.toString(s.permutation("abc")));
         System.out.println(Arrays.toString(s.permutation("123456")));
     }
+
+    @Test
+    public void solution39Test() {
+        var s = new Solution39();
+        assertEquals(2, s.majorityElement(new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2}));
+    }
 }
