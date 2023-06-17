@@ -306,4 +306,15 @@ public class SolutionTest {
         var s = new Solution39();
         assertEquals(2, s.majorityElement(new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2}));
     }
+
+    @Test
+    public void solution41Test() {
+        var s = new Solution41();
+        assertEquals(0.0, s.findMedian());
+        s.addNum(1);
+        s.addNum(2);
+        assertEquals(1.5, s.findMedian());
+        s.addNum(3);
+        assertEquals(2.0, s.findMedian());
+    }
 }
