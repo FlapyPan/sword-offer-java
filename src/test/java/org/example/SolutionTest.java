@@ -317,4 +317,10 @@ public class SolutionTest {
         s.addNum(3);
         assertEquals(2.0, s.findMedian());
     }
+
+    @Test
+    public void solution42Test() {
+        var s = new Solution42();
+        assertEquals(6, s.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+    }
 }
