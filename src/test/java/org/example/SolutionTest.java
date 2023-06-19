@@ -323,4 +323,10 @@ public class SolutionTest {
         var s = new Solution42();
         assertEquals(6, s.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
     }
+
+    @Test
+    public void solution43Test() {
+        var s = new Solution43();
+        assertEquals(5, s.countDigitOne(12));
+    }
 }
