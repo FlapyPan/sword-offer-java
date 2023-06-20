@@ -329,4 +329,12 @@ public class SolutionTest {
         var s = new Solution43();
         assertEquals(5, s.countDigitOne(12));
     }
+
+    @Test
+    public void solution44Test() {
+        var s = new Solution44();
+        assertEquals(3, s.findNthDigit(3));
+        assertEquals(0, s.findNthDigit(11));
+        assertEquals(9, s.findNthDigit(1145141919));
+    }
 }
