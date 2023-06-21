@@ -337,4 +337,11 @@ public class SolutionTest {
         assertEquals(0, s.findNthDigit(11));
         assertEquals(9, s.findNthDigit(1145141919));
     }
+
+    @Test
+    public void solution45Test() {
+        var s = new Solution45();
+        assertEquals("102", s.minNumber(new int[]{10, 2}));
+        assertEquals("3033459", s.minNumber(new int[]{3, 30, 34, 5, 9}));
+    }
 }
