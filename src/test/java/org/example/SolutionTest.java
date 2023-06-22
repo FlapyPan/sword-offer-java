@@ -344,4 +344,10 @@ public class SolutionTest {
         assertEquals("102", s.minNumber(new int[]{10, 2}));
         assertEquals("3033459", s.minNumber(new int[]{3, 30, 34, 5, 9}));
     }
+
+    @Test
+    public void solution46Test() {
+        var s = new Solution46();
+        assertEquals(5, s.translateNum(12258));
+    }
 }
