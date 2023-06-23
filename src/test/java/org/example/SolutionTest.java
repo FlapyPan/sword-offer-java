@@ -350,4 +350,14 @@ public class SolutionTest {
         var s = new Solution46();
         assertEquals(5, s.translateNum(12258));
     }
+
+    @Test
+    public void solution47Test() {
+        var s = new Solution47();
+        assertEquals(12, s.maxValue(new int[][]{
+                {1, 3, 1},
+                {1, 5, 1},
+                {4, 2, 1}
+        }));
+    }
 }
