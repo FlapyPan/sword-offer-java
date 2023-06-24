@@ -360,4 +360,12 @@ public class SolutionTest {
                 {4, 2, 1}
         }));
     }
+
+    @Test
+    public void solution48Test() {
+        var s = new Solution48();
+        assertEquals(3, s.lengthOfLongestSubstring("abcabcbb"));
+        assertEquals(1, s.lengthOfLongestSubstring("bbbbbb"));
+        assertEquals(3, s.lengthOfLongestSubstring("pwwkew"));
+    }
 }
