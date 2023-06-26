@@ -368,4 +368,10 @@ public class SolutionTest {
         assertEquals(1, s.lengthOfLongestSubstring("bbbbbb"));
         assertEquals(3, s.lengthOfLongestSubstring("pwwkew"));
     }
+
+    @Test
+    public void solution49Test() {
+        var s = new Solution49();
+        assertEquals(12, s.nthUglyNumber(10));
+    }
 }
