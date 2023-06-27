@@ -374,4 +374,11 @@ public class SolutionTest {
         var s = new Solution49();
         assertEquals(12, s.nthUglyNumber(10));
     }
+
+    @Test
+    public void solution50Test() {
+        var s = new Solution50();
+        assertEquals('b', s.firstUniqChar("abaccdeff"));
+        assertEquals(' ', s.firstUniqChar(""));
+    }
 }
