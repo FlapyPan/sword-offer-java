@@ -381,4 +381,10 @@ public class SolutionTest {
         assertEquals('b', s.firstUniqChar("abaccdeff"));
         assertEquals(' ', s.firstUniqChar(""));
     }
+
+    @Test
+    public void solution51Test() {
+        var s = new Solution51();
+        assertEquals(5, s.reversePairs(new int[]{7, 5, 6, 4}));
+    }
 }
