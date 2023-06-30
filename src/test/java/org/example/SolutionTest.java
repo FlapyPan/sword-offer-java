@@ -387,4 +387,11 @@ public class SolutionTest {
         var s = new Solution51();
         assertEquals(5, s.reversePairs(new int[]{7, 5, 6, 4}));
     }
+
+    @Test
+    public void solution53_1Test() {
+        var s = new Solution53_1();
+        assertEquals(2, s.search(new int[]{5, 7, 7, 8, 8, 10}, 8));
+        assertEquals(0, s.search(new int[]{5, 7, 7, 8, 8, 10}, 6));
+    }
 }
